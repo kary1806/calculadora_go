@@ -8,10 +8,10 @@ import (
 	"strings"
 )
 
-type calc struct {
+type Calc struct {
 }
 
-func (calc) Operate(operacion string, operador string) int {
+func (Calc) Operate(operacion string, operador string) int {
 
 	valores := strings.Split(operacion, operador)
 	fmt.Println(valores)
