@@ -11,7 +11,7 @@ import (
 type calc struct {
 }
 
-func (calc) operate(operacion string, operador string) int {
+func (calc) Operate(operacion string, operador string) int {
 
 	valores := strings.Split(operacion, operador)
 	fmt.Println(valores)
@@ -46,7 +46,7 @@ func parsear(entrada string) int {
 	return numero
 }
 
-func leerEntrada() string {
+func LeerEntrada() string {
 	scanner := bufio.NewScanner(os.Stdin)
 	fmt.Println("Digite una operacion")
 	scanner.Scan()
